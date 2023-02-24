@@ -3,14 +3,14 @@ const todoInput = document.querySelector(".todo-input");
 const submitButton = document.querySelector(".submit-btn");
 const todoList = document.querySelector(".todo-list");
 const filterOption = document.querySelector(".filter-todo");
-const clearStorageButton = document.querySelector(".storage-clear-btn");
+const clearStorage = document.querySelector(".clear-storage");
 
 // event listeners
 document.addEventListener("DOMContentLoaded", getLocalTodos);
 submitButton.addEventListener("click", addToDo);
 todoList.addEventListener("click", deleteCheck);
 filterOption.addEventListener("click", filterTodo);
-clearStorageButton.addEventListener("click", clearLocalStorage);
+clearStorage.addEventListener("click", clearLocalStorage);
 
 function createCheckedButton() {
   // Create a Checked button

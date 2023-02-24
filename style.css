@@ -141,32 +141,24 @@ select {
 }
 
 .side-note {
+  width: 20%;
+  height: 10vh;
+  background-color: #ff6f47;
   color: black;
-  width: 30%;
-  padding: 0;
-  padding-left: 15px;
-  margin-left: 15px;
-  margin-right: 10px;
-  float: right;
-  font-style: italic;
-  font-weight: bold;
-  background-color: #f6d365;
-  border-radius: 15px 50px 30px;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: fixed;
-  right: 0;
-  bottom: 10px;
+  right: 2%;
+  bottom: 20px;
 }
 
-.storage-clear-btn {
-  text-align: center;
-  font-size: 1rem;
-  font-weight: 600;
-  margin-left: 5px;
-  padding: 10px;
-  border-radius: 20px;
-  border: none;
+.side-note > p > .clear-storage {
   cursor: pointer;
-  background: #ff6f47;
+  border-bottom: 1px solid white;
 }
 
 @media only screen and (max-width: 680px) {
@@ -204,8 +196,8 @@ select {
   .selector {
     height: 27px;
     margin: 0.8rem;
-    position: relative;
     display: flex;
+    justify-content: center;
     align-items: center;
   }
 
@@ -217,38 +209,24 @@ select {
   }
 
   .todo {
-    height: 35px;
+    height: 30px;
   }
 
   .checked-btn,
   .delete-btn {
-    height: 35px;
+    height: 30px;
     display: flex;
     align-items: center;
   }
 
   .side-note {
-    display: flex;
-    align-items: center;
-    float: none;
-    width: 300px;
-    height: 10vh;
-    padding: 2px 6px;
+    width: 150px;
+    height: 50px;
     font-size: 10px;
-    background-color: #f6d365;
+    padding: 3px 8px;
     position: fixed;
-    right: 0;
-    bottom: 10px;
-  }
-
-  .storage-clear-btn {
-    font-size: 0.8rem;
-    font-weight: 200;
-    padding-right: 10px;
-    margin-left: 5px;
-    margin-bottom: 4px;
-    padding: 2px;
-    border-radius: 20px;
-    background: #ff6f47;
+    bottom: 5px;
+    right: 8px;
+    top: calc(100% - 70px);
   }
 }
