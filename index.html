@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.css"
+      integrity="sha512-+ouAqATs1y4kpPMCHfKHVJwf308zo+tC9dlEYK9rKe7kiP35NiP+Oi35rCFnc16zdvk9aBkDUtEO3tIPl0xN5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Todo</h1>
+    </header>
+
+    <form className="form-container">
+      <div class="input-container">
+        <input class="todo-input" type="text" />
+        <button class="submit-btn" type="submit">
+          <i class="fas fa-plus-square"></i>
+        </button>
+      </div>
+      <div class="selector">
+        <select class="filter-todo" name="selector">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="not completed">Not Completed</option>
+        </select>
+      </div>
+    </form>
+
+    <div class="todo-container">
+      <ul class="todo-list"></ul>
+    </div>
+
+    <aside>
+      <p>
+        If you want to clear the Local Storage, click the button and refresh the
+        page.
+        <span><button class="storage-clear-btn">Clear Storage !</button></span>
+      </p>
+    </aside>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
