@@ -235,6 +235,10 @@ select {
     height: 10vh;
     padding: 2px 6px;
     font-size: 10px;
+    background-color: #f6d365;
+    position: fixed;
+    right: 0;
+    bottom: 10px;
   }
 
   .storage-clear-btn {
@@ -245,5 +249,6 @@ select {
     margin-bottom: 4px;
     padding: 2px;
     border-radius: 20px;
+    background: #ff6f47;
   }
 }
