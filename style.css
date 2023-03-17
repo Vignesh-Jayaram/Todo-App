@@ -151,9 +151,9 @@ select {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: fixed;
-  right: 2%;
-  bottom: 20px;
+  position: sticky;
+  left: 80%;
+  bottom: 2%;
 }
 
 .side-note > p > .clear-storage {
