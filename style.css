@@ -161,7 +161,7 @@ select {
   border-bottom: 1px solid white;
 }
 
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 360px) {
   header {
     font-size: 1rem;
   }
@@ -181,10 +181,7 @@ select {
   .input-container input,
   .input-container button {
     width: 200px;
-    padding: 1rem;
     font-size: 1rem;
-    border: none;
-    background: white;
   }
 
   .input-container button {
@@ -214,19 +211,22 @@ select {
 
   .checked-btn,
   .delete-btn {
+    width: 30px;
     height: 30px;
+    font-size: 15px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 
   .side-note {
-    width: 150px;
-    height: 50px;
-    font-size: 10px;
+    width: 9rem;
+    height: 3rem;
+    font-size: 0.75rem;
     padding: 3px 8px;
-    position: fixed;
-    bottom: 5px;
-    right: 8px;
-    top: calc(100% - 70px);
+    position: sticky;
+    left: 80%;
+    bottom: 2%;
   }
 }
