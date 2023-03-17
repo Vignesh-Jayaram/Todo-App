@@ -153,7 +153,8 @@ select {
   justify-content: center;
   position: sticky;
   left: 80%;
-  bottom: 2%;
+  top: 85%;
+  bottom: 0.5%;
 }
 
 .side-note > p > .clear-storage {
@@ -221,12 +222,8 @@ select {
   }
 
   .side-note {
-    width: 9rem;
-    height: 3rem;
-    font-size: 0.75rem;
-    padding: 3px 8px;
-    position: sticky;
-    left: 80%;
-    bottom: 2%;
+    width: 10rem;
+    height: 5rem;
+    font-size: 0.8rem;
   }
 }
